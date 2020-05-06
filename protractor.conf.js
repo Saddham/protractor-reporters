@@ -53,15 +53,10 @@ exports.config = {
         './src/**/*.e2e-spec.ts'
     ],
     capabilities: {
-        browserName: 'chrome',
+        'directConnect': true,
+        'browserName': 'chrome',
         chromeOptions: {
-            args: [
-                // "--headless",
-                // "--window-size=1920,1080",
-
-                // "--incognito",
-                "--start-maximized"
-            ]
+            args: ['--headless', '--disable-gpu', '--window-size=800x600']
         }
     },
 
